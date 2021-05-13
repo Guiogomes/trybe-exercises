@@ -1,0 +1,48 @@
+h1{
+    font-size:65px;
+    color:orange;  
+    font-family: sans-serif;          
+    
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive, Arial, sans-serif;
+    font-weight: bolder;
+}
+ body {
+    background-color: pink;
+    font-size: 16px;
+}
+#list-style {
+    background-color: red;
+    color: rgb (300, 250, 120)
+    
+}
+#list-style.another-background {
+    background-color: grey;
+    color: black
+    
+}
+.another-background {
+    background-color: grey;
+    color: black
+}
+ul {
+    text-align: right;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: monospace;
+    font-weight: bold;
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
