@@ -15,3 +15,7 @@ li:hover {
     background-color: yellow;
 
 }
+li:active {
+    font-size: 30px;
+    color: red;
+}
