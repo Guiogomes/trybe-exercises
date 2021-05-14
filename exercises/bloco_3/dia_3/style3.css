@@ -1,7 +1,17 @@
-.geral{
+p, h1{
     text-align: center;
-    background-color: red;
+    font-size: 20px;
+
 }
-#teste{
-    background-color: red;
+h1{
+    font-size: 40px;
+}
+ol, ul{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+li:hover {
+    background-color: yellow;
+
 }
