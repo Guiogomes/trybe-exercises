@@ -12,6 +12,7 @@
     top: 264px;
     left: 100px;
     float: left;
+    z-index: 2;
 
     
 }
@@ -20,6 +21,7 @@
     width: 150px;
     top: 70px;
     left: 50px;
+    z-index: 1;
 
 }
 .baloon{
