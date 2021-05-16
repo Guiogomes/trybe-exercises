@@ -21,6 +21,9 @@
 ol li:nth-child(2n){
     color: green;
 }
+.primo {
+    text-transform: uppercase;
+}
 ul:hover{
     font-weight: bold;
 }
