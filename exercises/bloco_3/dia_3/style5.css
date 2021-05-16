@@ -18,6 +18,9 @@
     font-size: 40px;
     border: 1px solid black;
 }
+ol li:nth-child(2n){
+    color: green;
+}
 ul:hover{
     font-weight: bold;
 }
