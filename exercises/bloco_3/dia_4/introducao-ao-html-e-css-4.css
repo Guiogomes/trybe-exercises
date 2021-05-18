@@ -1,0 +1,87 @@
+body{
+    border: red solid 3px;
+}
+.cabecalho {
+    color: #00BFFF;
+    font-family: monospace;
+    font-weight: 30%;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 20px;  
+    margin-top: 20px;  
+    border: solid 2px green;
+    text-align: center;
+}
+.cabecalho h3 {
+    color: #CD5C5C;
+}
+.control-panel{
+    
+    font-family: monospace;
+    font-size: 20px;
+    
+    border: solid blue 3px;
+    
+}
+.control-panel ul li{
+display: inline-block;
+list-style-type: none;
+margin-right: 80px;
+}
+main{
+    font-family: monospace;
+    text-align: center;
+}
+.dados-cientificos{
+    background-image: url(https://i.pinimg.com/originals/08/e2/de/08e2de660627467388ad0d7f56b91313.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.dados-cientificos{
+    border: 3px solid yellow;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    
+}
+.dados-cientificos td{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    padding-left: 20px;
+    border: #00BFFF solid 3px;
+}
+.forca-soco{
+    color: #8FBC8F;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    border: #00BFFF solid 5px;
+}
+.forca-soco h4{
+
+    color: #00BFFF;
+    font-size: 40px;
+    text-align: center;
+}
+.forca-soco h5{ 
+    color: #CD5C5C;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.forca-soco img{
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+    bottom: 100px;
+}
+
+
