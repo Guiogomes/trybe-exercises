@@ -12,22 +12,33 @@
     color: #CD5C5C;
 }
 .control-panel{
-    
+    color: #FF1493;
     font-family: monospace;
     font-size: 20px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .control-panel ul li{
 display: inline-block;
 list-style-type: none;
 margin-right: 80px;
 }
+a:hover{
+    color: green;
+    text-transform: uppercase;
+}
 main{
+    background-color: #D3D3D3;
     font-family: monospace;
+    position: absolute;
     text-align: center;
+    
 }
 article {
-    font-size: 40px;
     color:#00BFFF;
+    font-size: 40px;
+    
 }
 .dados-cientificos{
     background-image: url(https://i.pinimg.com/originals/08/e2/de/08e2de660627467388ad0d7f56b91313.jpg);
@@ -52,30 +63,108 @@ article {
 }
 .forca-soco{
     color: #8FBC8F;
-    display: inline-block;
+    float: left;
     font-size: 20px;
+    height: 500px;
     line-height: 20px;
-    padding: 20px;
+    padding-bottom: 200px;
     margin: 40px;
-    text-align: center;
+    position: relative;
+    text-align: justify;
+    width: 50%;
+    
 }
-.forca-soco h4{
+.forca-soco h4, .visao h4, .nomes-no-brasil h4, .video h4{
 
     color: #00BFFF;
     font-size: 40px;
+    line-height: 10px;
     text-align: center;
 }
-.forca-soco h5{ 
+.forca-soco h5, .visao h5, .bibliografia h5{ 
     color: #CD5C5C;
     font-size: 30px;
     text-align: center;
+    line-height: 20px;
     
 }
 .forca-soco img{
-    display: inline-block;
+    float: right;
+    margin-top: 0;
     padding: 20px;
+    padding-top: 0;    
     width: 400px;
     bottom: 100px;
 }
+.forca-soco p, .visao p, .nomes-no-brasil p{
+    margin: 20px;
+}
+.visao{
+    color: #8FBC8F;
+    float: left;
+    font-size: 20px;
+    height: 420px;
+    line-height: 20px;
+    padding-bottom: 280px;
+    margin: 40px;
+    margin-top: 0;
+    text-align: justify;
+    width: 50%;
 
+}
+.visao img{
+    float: center;
+    margin-left: 180px;
+    margin-bottom: 300px;
+    width: 600px;
+    position: relative;
+}
+.nomes-no-brasil {
+    color: #8FBC8F;
+    float: left;
+    font-weight: 10px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 20px;
+    margin: 40px;
+    margin-top: 0;
+    padding-bottom: 280px;
+    text-align: center;
+    width: 50%;
+}
+.video{
+    color: #8FBC8F;
+    float: right;
+    height: 700px;
+    margin: 40px;
+    text-align: center;
+    width: 40%;
+    position: relative;
+}
+.bibliografia h4{
+    color:#00BFFF;
+    font-size: 2em;
+    font-weight: 10px;
+}
+.bibliografia{
+    color: #8FBC8F;
+    float: left;
+    font-size: 20px;
+    text-align: center;
 
+}
+.bibliografia a{
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+}
+.rodape {
+    color: #8FBC8F;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+.nomes-no-brasil a, .video a, .bibliografia a, .rodape a{
+    color: #F4A460;
+}
