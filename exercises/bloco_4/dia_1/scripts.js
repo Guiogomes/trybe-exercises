@@ -38,18 +38,19 @@ if (nota >= 80) {
 
 
 let nota = 50;
-let situacaoCandidato = nota;
+let situacaoCandidato = 'aprovado reprovado lista';
+situacaoCandidato = 'lista'
 
 switch (situacaoCandidato) {
-    case (nota >= 80):
+    case 'aprovado':
         console.log ('aprovada');
         break;
 
-    case (nota >= 60 && nota <= 80):
+    case 'lista':
         console.log ('lista de espera');
         break;
 
-    case (nota < 60):
+    case 'reprovado':
         console.log ('reprovada');
         break;
     
