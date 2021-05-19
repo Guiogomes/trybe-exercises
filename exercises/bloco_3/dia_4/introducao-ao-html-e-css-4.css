@@ -1,6 +1,12 @@
+body {
+    margin: 0;
+    
+}
 .cabecalho {
   color: #00BFFF;
   background-color: #8FBC8F;
+  border: 15px;
+  border-style: outset;
   font-family: monospace;
   font-weight: 30%;
   font-size: 40px;
@@ -10,6 +16,10 @@
   padding-bottom: 20px;  
   text-align: center;
 }
+.cabecalho h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 
 .cabecalho h3 {
   color: #CD5C5C;
@@ -17,6 +27,8 @@
 
 .control-panel {
   background-color: #DEB887;
+  border: 20px;
+  border-style: inset;
   color: #FF1493;
   font-family: monospace;
   font-size: 20px;
@@ -58,6 +70,8 @@ article {
   background-image: url(https://i.pinimg.com/originals/08/e2/de/08e2de660627467388ad0d7f56b91313.jpg);
   background-position: center;
   background-size: cover;
+  border: 30px #A52A2A;
+  border-style: inset;
     
 }
 
@@ -85,13 +99,11 @@ article {
   line-height: 20px;
   padding-bottom: 200px;
   margin: 40px;
-  margin-top: 0;
+  margin-top: 30px;
   padding: 10px;
   position: relative;
   text-align: justify;
   width: 40%;
-
-    border: green solid 3px;
     
 }
 
@@ -113,12 +125,13 @@ article {
 }
 
 .forca-soco img {
-  float: right;
-  display: right;
-  margin-top: 0;
+  
+  display: block;
+  margin: 20px auto;
   padding-bottom: 10px;
-  width: 500px;
-  border: solid red 3px;
+  padding: 10px;
+  width: 400px;
+  
 }
 
 .forca-soco p, .visao p, .nomes-no-brasil p {
@@ -130,25 +143,22 @@ article {
   display: block;
   float: right;
   font-size: 20px;
-  height: 1000px;
+  height: 850px;
   line-height: 20px;
   padding: 10px;
   margin: 40px;
   margin-right: 50px;
+  margin-top: 50px;
   text-align: justify;
   width: 40%;
-
-    border: red solid 3px;
 
 }
 
 .visao img {
-  float: right;
   display: block;
-  margin-right: 15px;
-  margin-bottom: 300px;
+  margin: 20px auto;
   width: 480px;
-  position: relative;
+  padding:10px;
 }
 
 .nomes-no-brasil {
@@ -158,16 +168,17 @@ article {
   font-size: 20px;
   line-height: 20px;
   margin: 40px;
-  margin-top: 0;
+  margin-right: 100px;
+  margin-top: 0px;
   padding: 15px;
   text-align: justify;
   width: 39%;
   word-spacing: 5px;
 
-    border: red 3px solid;
 }
 
-.nomes-no-brasil h4 {  margin-left: 15px;
+.nomes-no-brasil h4 {  
+  margin-left: 15px;
 }
 
 .nomes-no-brasil a, .video a, .bibliografia a, .rodape a {
@@ -178,16 +189,14 @@ article {
   color: #8FBC8F;
   display: block;
   float: right;
-  font-size: 20px;   
-  margin: 40px;
-  margin-right: 48px;
-  margin-top: 8px; 
+  font-size: 20px;
+  margin: -30px 50px 40px;
+  
   padding: 20px;   
   position: relative;
   text-align: center;
   width: 38.5%;
 
-  border: red 3px solid;
 }
 
 .bibliografia h4 {
