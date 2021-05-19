@@ -132,7 +132,7 @@ article {
   font-size: 20px;
   height: 1000px;
   line-height: 20px;
-  padding: 40px;
+  padding: 10px;
   margin: 40px;
   margin-right: 50px;
   text-align: justify;
@@ -159,9 +159,10 @@ article {
   line-height: 20px;
   margin: 40px;
   margin-top: 0;
-  padding: 40px;
-  text-align: center;
-  width: 42%;
+  padding: 15px;
+  text-align: justify;
+  width: 39%;
+  word-spacing: 5px;
 
     border: red 3px solid;
 }
@@ -180,10 +181,13 @@ article {
   font-size: 20px;   
   margin: 40px;
   margin-right: 48px;
-  margin-top: 100px;    
+  margin-top: 8px; 
+  padding: 20px;   
   position: relative;
   text-align: center;
   width: 40%;
+
+  border: red 3px solid;
 }
 
 .bibliografia h4 {
