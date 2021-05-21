@@ -6,8 +6,9 @@
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 
 let pecaXadrez = 'rainha';
+pecaXadrez = 'Rainha'
 
-switch (pecaXadrez) {
+switch (pecaXadrez .toLowerCase(pecaXadrez)) {
     case 'peão': 
         console.log ('Move para frente e tira outras peças na diagonal frontal');
         break;
