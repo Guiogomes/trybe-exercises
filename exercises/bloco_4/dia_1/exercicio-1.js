@@ -7,25 +7,29 @@
 
 let  a = 20;
 let b = 10;
-let adicao = a + b;
 
-console.log (adicao);
+function soma (a, b){
+    return a + b;
+}
+function multiplicacao (a, b){
+    return a * b
+}
+function subtracao (a, b){
+    return a - b;
+}
 
-let subtracao = a - b;
+function divisao (a,b) {
+    return a / b
+}
+function modulo (a,b) {
+    return a % b;
+}
 
-console.log (subtracao);
+let sum = soma (a,b);
+let mult = multiplicacao (a,b);
+let sub = subtracao (a,b);
+let div = divisao (a,b);
+let mod = modulo (a,b);
 
-let multiplicacao = a * b;
-
-console.log (multiplicacao);
-
-let divisao = a / b;
-
-console.log (divisao);
-
-let modulo = a % b;
-
-console.log (modulo);
-
-
+console.log (sum, mult, sub, div, mod);
 
