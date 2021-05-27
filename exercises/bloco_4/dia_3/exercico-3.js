@@ -18,10 +18,7 @@ for (let aumentoAsterisco = 0; aumentoAsterisco < base; aumentoAsterisco +=1){
 }
 let trianguloInvertido = espaco + asterisco;
 
-for (let invertido = 5; invertido > base - invertido; invertido -=1){
-    trianguloInvertido += espaco + '*'
-    console.log (trianguloInvertido);
-}
+
 // fazer com que o espaço seja diminuito em cada linha com o aumento do asterisco;
 
 
