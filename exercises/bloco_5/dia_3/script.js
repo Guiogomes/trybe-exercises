@@ -38,13 +38,16 @@ function createDaysOfMounth () {
   createDaysOfMounth ();
 
 function holidayButtons(feriados) {
+    let buttonsContainer = document.querySelector ('.buttons-container');
     let feriadosButton = document.createElement ('button');
     feriadosButton.setAttribute ('id', 'btn-holiday');
-    let buttonsContainer = document.querySelectorAll ('.buttons-container');
+       
     buttonsContainer.appendChild(feriadosButton);
 }
 
 holidayButtons ();
+
+
 // Implemente uma função que receba como parâmetro a string "Feriados" e 
 // crie dinamicamente um botão com o nome "Feriados".
 // Adicione a este botão a ID "btn-holiday" .
