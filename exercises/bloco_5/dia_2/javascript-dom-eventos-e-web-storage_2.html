@@ -99,9 +99,19 @@
     leftDiv.appendChild(imagem);
     // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista.
     let listaNaoOrdenada = document.createElement ('ul');
-    console.log (listaNaoOrdenada);
-    
+    listaNaoOrdenada.className = 'unorder-list';
+    let listItens = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let unorderList = document.querySelector ('.unorder-list');
+    for (index = 0; index < listItens.length; index += 1) {
+      let emputItem = listItens [index];
+      let unorderListItem = document.createElement ('li');
+      unorderListItem.innerText = emputItem;
+      unorderList.appendChild (unorderListItem);
+      
+    }
     // Essa lista deve ser filha do div criado no passo 6;
+    rightDiv.appendChild (listaNaoOrdenada);
+
     // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     createDiv.appendChild (document.createElement ('h3'));
     createDiv.appendChild (document.createElement ('h3'));
