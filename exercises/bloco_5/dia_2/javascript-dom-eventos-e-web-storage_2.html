@@ -74,6 +74,10 @@
     document.body.appendChild (createDiv);
     console.log (document.body);
     // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+    let centerDiv = document.createElement ('div');
+    centerDiv.className = 'center-content';
+    createDiv.appendChild (centerDiv);
+    console.log (createDiv);
     // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
     // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
     // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
