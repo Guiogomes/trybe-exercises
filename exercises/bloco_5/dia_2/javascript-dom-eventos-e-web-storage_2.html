@@ -79,6 +79,12 @@
     createDiv.appendChild (centerDiv);
     console.log (createDiv);
     // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+    let pTag = document.createElement ('p');
+    let pTagText = document.createTextNode ('texto do parágrafo da div central');
+    pTag.appendChild (pTagText);
+    centerDiv.appendChild (pTag);
+    
+    
     // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
     // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
     // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 
