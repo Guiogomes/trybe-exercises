@@ -29,6 +29,15 @@
         console.log (voceEsta.parentNode.innerText);
         console.log (voceEsta.nextElementSibling);
         console.log (document.querySelector ('#pai').lastElementChild.previousElementSibling);
+        let irmaoDiv = document.createElement ('div');
+        console.log (irmaoDiv);
+        let elementoPai = document.querySelector ('#pai');
+        console.log (elementoPai);
+        elementoPai.appendChild (irmaoDiv);
+        voceEsta.appendChild (document.createElement('h1'));
+        document.querySelector ('#primeiroFilhoDoFilho').appendChild (document.createElement ('p'));
+        console.log (document.querySelector ('#primeiroFilhoDoFilho'));
+        console.log (document.querySelector ('p').parentElement.nextElementSibling);
     </script>
 </body>
 </html>
@@ -40,4 +49,9 @@ Acesse o primeiroFilho a partir de pai .
 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
-Agora acesse o terceiroFilho a partir de pai . -->
+Agora acesse o terceiroFilho a partir de pai . 
+Crie um irmão para elementoOndeVoceEsta .
+Crie um filho para elementoOndeVoceEsta .
+Crie um filho para primeiroFilhoDoFilho .
+A partir desse filho criado, acesse terceiroFilho .
+-->
