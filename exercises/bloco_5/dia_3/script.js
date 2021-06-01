@@ -143,16 +143,33 @@ function personaliseTask(tarefa) {
 }
 
 personaliseTask ('cozinhar');
-// Implemente uma função que adiciona uma tarefa personalizada ao calendário. 
-// A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") 
-// e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
-// O elemento criado deverá ser adicionado como filho/filha da tag <div> 
-// que possui a classe "" .
 
-// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do 
-// mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, 
-// quando o ponteiro do 
-// mouse sair do dia, o texto deve retornar ao tamanho original.
+function colorLegend(cor) {
+  let myTasks = document.querySelector ('.my-tasks');
+
+  let color = document.createElement ('div');
+  myTasks.appendChild (color);
+  color.setAttribute ('class', 'task');
+  color.style.backgroundColor = cor;
+
+}
+
+colorLegend ('gray');
+
+function colorTask() {
+  let taskSelected = document.querySelector ('.task');
+  taskSelected.addEventListener ('click', (event) => {
+    //.togle w3scholl
+    event.target.classList.toggle ('selected');
+  })
+}
+
+colorTask ();
+// Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag 
+// <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected ,
+// ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task 
+// , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
 
 // let holidayButtonEvent = document.querySelector('#btn-holiday');
 // console.log (holidayButtonEvent);
@@ -164,10 +181,7 @@ personaliseTask ('cozinhar');
 // //         monthDaysListItem[index].style.backgroundColor = 'red'
 // //      }
 // //    }
-  // Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda
-  //  a cor de fundo dos dias que possuem a classe "holiday" .
-  // É interessante que este botão possua também a lógica inversa. 
-  // Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+  
 
 
   
