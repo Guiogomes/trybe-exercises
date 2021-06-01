@@ -84,8 +84,11 @@ function fridayButton(SEXTOU) {
 fridayButton ('Sexta-feira');
 
 function fridayButtonClick() {
+  //pegar a classe das sextas
   let fridays = document.querySelectorAll ('.friday');
+  //pegar o botão
   let fridayBotao = document.querySelector ('#btn-friday');
+  //criar um escutador de click para o botão
   fridayBotao.addEventListener ('click', () => {
     for (let index = 0; index < fridays.length; index += 1) {
       let sexta = fridays[index];
@@ -100,20 +103,56 @@ function fridayButtonClick() {
     }
   })
 }
-const arrayNumber = [4, 11, 18, 25];
-console.log (arrayNumber[0]);
 
 fridayButtonClick ();
 
-// Implemente uma função que adicione ao botão "Sexta-feira" um evento 
-// de "click" que modifica
-//  o texto exibido nos dias que são Sexta-feira.
-// É interessante que este botão possua também a lógica inversa. 
-// Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
-// Implemente uma função que receba como parâmetro a string "Sexta-feira" 
-// e crie dinamicamente um botão com o nome "Sexta-feira".
-// Adicione a este botão o ID "btn-friday" .
-// Adicione este botão como filho/filha da tag <div> com classe "" .
+function zoomIn() {
+  //aumentar o texto
+  // mouseover aumenta objeto
+  let daysList = document.querySelector('#days')
+  daysList.addEventListener ('mouseover', (event) => {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  });
+}
+zoomIn ();
+
+function zoomOut() {
+  //diminuir o texto
+  //mouseout diminui o texto
+  let daysList = document.querySelector('#days')
+  daysList.addEventListener ('mouseout', (event) => {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  });
+}
+
+zoomOut ();
+
+function personaliseTask(tarefa) {
+  //selecionar elemento pai
+  let myTasks = document.querySelector ('.my-tasks');
+  //criar elemento
+  let task = document.createElement ('span');
+  //adicionar o filho no pai (appendChild)
+  myTasks.appendChild (task);
+  task.innerText = tarefa;
+  //adicionar classe
+  task.className = 'my-tasks';
+
+}
+
+personaliseTask ('cozinhar');
+// Implemente uma função que adiciona uma tarefa personalizada ao calendário. 
+// A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") 
+// e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> 
+// que possui a classe "" .
+
+// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do 
+// mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, 
+// quando o ponteiro do 
+// mouse sair do dia, o texto deve retornar ao tamanho original.
 
 // let holidayButtonEvent = document.querySelector('#btn-holiday');
 // console.log (holidayButtonEvent);
