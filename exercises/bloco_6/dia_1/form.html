@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Exercícios do dia 6.1 - HTML & CSS FORMS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id = 'header-forms'>
+    <h1>Formulário de preenchimento</h1>
+  </header>
+  <form action="" method="get">
+    <div class = 'forms-container'>
+      <fieldset>
+          <label for="name-input">Nome: </label>
+          <input type="text" name="full-name" id="name-input" maxlength="40" required autofocus>
+          <label for="email-input">E-mail: </label>
+          <input type="text" name="e-mail" id="email-input" maxlength="50" required>
+          <label for="cpf-input">CPF: </label>
+          <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
+          <br>
+          <label for="address-input">Endereço: </label>
+          <input type="text" name="address" id="address-input" maxlength="200" required>
+          <label for="city-input">Cidade: </label>
+          <input type="text" name="city" id="city-input" maxlength="28" required>
+          <label for="state-select"> Estado: 
+              <select name="state" id="state-select" required>
+              </select>
+          </label>  
+      </fieldset>
+    </div>
+    <div class = 'forms-container'>
+      <fieldset>
+        <label for="cv-textarea">Resumo do Currículo: </label>
+        <br>
+        <textarea name="abstract-cv" id="cv-textarea" maxlength="1000" required></textarea>
+        <br>
+        <label for="position-input">Cargo ou último cargo: </label>
+        <br>
+        <input type="text" name="position" id="position-input" maxlength="40" required>
+        <br>
+        <label for="position-description-input">Descrição do cargo ocupado: </label>
+        <br>
+        <input type="text" name="position-description" id="position-description-input" maxlength="40" required>
+        <br>
+        <label for="beginning-input">Data de início: </label>
+        <br>
+        <input type="text" name="beginning-date" placeholder="dd/mm/aaaa" id="beginning-input" maxlength="40" required>
+      </fieldset>
+    </div>
+    <div class="button-container">
+      <button type="reset">Limpar formulário</button>
+      <button type="submit">Enviar formulário</button>
+    </div>
+  </form>
+    <script src="script.js"></script>
+</body>
+</html>
