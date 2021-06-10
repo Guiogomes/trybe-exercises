@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">    
     <title>Exercícios do dia 6.1 - HTML & CSS FORMS</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
+  </head>
 <body>
   <header id = 'header-forms'>
     <h1>Formulário de preenchimento</h1>
   </header>
   <form action="" method="get">
-    <div class = 'forms-container'>
+    <div>
       <fieldset>
           <label for="name-input">Nome: </label>
           <input type="text" name="full-name" id="name-input" maxlength="40" required autofocus>
@@ -31,7 +28,7 @@
           </label>  
       </fieldset>
     </div>
-    <div class = 'forms-container'>
+    <div>
       <fieldset>
         <label for="cv-textarea">Resumo do Currículo: </label>
         <br>
@@ -50,7 +47,7 @@
         <input type="text" name="beginning-date" placeholder="dd/mm/aaaa" id="beginning-input" maxlength="40" required>
       </fieldset>
     </div>
-    <div class="button-container">
+    <div>
       <button type="reset">Limpar formulário</button>
       <button type="submit">Enviar formulário</button>
     </div>
