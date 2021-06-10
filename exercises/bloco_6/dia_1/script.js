@@ -26,7 +26,6 @@ function getInputsData() {
     inputValuesSave.push(inputItemsObjectForm);
   }
   return inputValuesSave;
-}
 getInputsData();
 
 function validateInfoInputs() {
