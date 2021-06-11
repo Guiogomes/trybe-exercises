@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">    
     <title>Exercícios do dia 6.1 - HTML & CSS FORMS</title>
@@ -8,8 +8,9 @@
   <header id = 'header-forms'>
     <h1>Formulário de preenchimento</h1>
   </header>
+  <div class="container is-fluid">
   <form action="" method="get">
-    <div>
+    <div class="container is-fluid">
       <fieldset>
           <label for="name-input">Nome: </label>
           <input type="text" name="full-name" id="name-input" maxlength="40" required autofocus>
@@ -28,7 +29,7 @@
           </label>  
       </fieldset>
     </div>
-    <div>
+    <div class="container is-fluid">
       <fieldset>
         <label for="cv-textarea">Resumo do Currículo: </label>
         <br>
@@ -49,9 +50,10 @@
     </div>
     <div>
       <button type="reset">Limpar formulário</button>
-      <button type="submit">Enviar formulário</button>
+      <button type="submit" id="submit-button">Enviar formulário</button>
     </div>
   </form>
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
