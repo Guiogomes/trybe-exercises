@@ -1,0 +1,27 @@
+body {
+  background-color:  #deeaee;
+}
+.button {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.container {
+  margin: 7px auto;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
+.container{
+  margin-bottom: 0;
+} 
+.content {
+	margin-top: 10px;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
