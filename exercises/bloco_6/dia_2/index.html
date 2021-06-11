@@ -9,7 +9,7 @@
 <body>
   <div class="container is-fluid">
   <header id = 'header-forms'>
-    <h1>Formulário de preenchimento</h1>
+    <h1 class="content - is-large">Formulário de preenchimento</h1>
   </header>
   </div>
   <div class="container is-fluid">
@@ -25,35 +25,45 @@
       </label>
       <label class="container" for="cpf-input">
         <p class="content">CPF:</p>
-          <input class="input is-info is-rounded" type="text" name="cpf" id="cpf-input" maxlength="11" required>
+        <input class="input is-info is-rounded" type="text" name="cpf" id="cpf-input" maxlength="11" required>
       </label>
-      <label class="container" for="address-input">Endereço: </label>
-          <input class="input is-info is-rounded" type="text" name="address" id="address-input" maxlength="200" required>
-          <label class="container" for="city-input">Cidade: </label>
-          <input class="input is-info is-rounded" type="text" name="city" id="city-input" maxlength="28" required>
+      <label class="container" for="address-input">
+        <p class="content">Eendereço:</p>
+        <input class="input is-info is-rounded" type="text" name="address" id="address-input" maxlength="200" required>
+      </label>
+      <label class="container" for="city-input">
+        <p class="content">Cidade:</p>
+        <input class="input is-info is-rounded" type="text" name="city" id="city-input" maxlength="28" required>
+      </label>
 	  <div class="select is-multiple is-info container is-fluid">
-	    <label class="container" for="state-select"> Estado: 
-		<select name="state" id="state-select" required>
-		</select>
+	    <label for="state-select"> 
+        <p class="content">Estado:</p>
+		    <select name="state" id="state-select" required>
+		    </select>
 	    </label>
 	  </div>
     </div>
     <div class="container is-fluid">
-        <label for="cv-textarea">Resumo do Currículo: </label>
-        <br>
-        <textarea class="textarea is-info is-rounded" name="abstract-cv" id="cv-textarea" maxlength="1000" required></textarea>
-        <br>
-        <label class="container" for="position-input">Cargo ou último cargo: </label>
-        <br>
+      <label for="cv-textarea">
+          <p class="content">Resumo do Currículo:</p>
+          <textarea class="textarea is-info is-rounded" name="abstract-cv" id="cv-textarea" maxlength="1000" required></textarea>
+      </label>
+      <label class="container" for="position-input"> 
+        <p class="content">Cargo ou último cargo: </p>
         <input class="input is-info is-rounded" type="text" name="position" id="position-input" maxlength="40" required>
-        <br>
-        <label class="container" for="position-description-input">Descrição do cargo ocupado: </label>
-        <br>
-        <input class="input is-info is-rounded" type="text" name="position-description" id="position-description-input" maxlength="40" required>
-        <br>
-        <label class="container" for="beginning-input">Data de início: </label>
-        <br>
+      </label>        
+      <label class="container" for="position-description-textarea"> 
+        <p class="content">Descrição do cargo:</p>
+         <textarea class="textarea is-info is-rounded" name="abstract-cv" id="position-description-textarea" maxlength="1000" required></textarea>
+      </label>       
+      <label class="container" for="beginning-input"> 
+        <p class="content">Data de Início:</p>
         <input class="input is-info is-rounded" type="date" name="beginning-date" placeholder="dd/mm/aaaa" id="beginning-input" maxlength="40" required>
+      </label>
+      <label class="container" for="ending-input"> 
+        <p class="content">Data de Termino:</p>
+        <input class="input is-info is-rounded" type="date" name="ending-date" placeholder="dd/mm/aaaa" id="beginning-input" maxlength="40">
+      </label>
     </div>
     <div class="container is-fluid">
       <button class="button is-success is-large" type="submit">Enviar formulário</button>

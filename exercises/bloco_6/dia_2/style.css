@@ -1,3 +1,6 @@
+body {
+  background-color:  #deeaee;
+}
 .button {
   margin-top: 20px;
   margin-right: 30px;
@@ -7,6 +10,18 @@
   margin: 7px auto;
 }
 
-.content {
- margin-top: 1.5rem;
+.container:first-child {
+  margin-top: 0;
 }
+
+.container{
+  margin-bottom: 0;
+} 
+.content {
+	margin-top: 10px;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
