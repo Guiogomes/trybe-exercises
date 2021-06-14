@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS FLEXBOX - ORDER</title>
+    <title>CSS FLEXBOX - BASIS</title>
     <style>
       .container {
         display: flex;
@@ -16,34 +16,26 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        /* Altere a propriedade flex-basis */
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
       }
 
       .one {
         background-color: #FBD26A;
-        display: flex;
-        /* Altere a propriedade grow. */
-        flex-grow: 5;
       }
 
       .two {
         background-color: #FAA488;
-        display: flex;
-        /* Altere a propriedade grow. */
-        flex-grow: 3;
       }
 
       .three {
         background-color: #9069EF;
-        display: flex;
-        /* Altere a propriedade grow. */
-        flex-grow: 4;
       }
 
       .four {
         background-color: #006472;
-        display: flex;
-        /* Altere a propriedade grow. */
-        flex-grow: 10;
       }
 
     </style>
