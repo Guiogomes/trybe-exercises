@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
 }
-body {
 
+body {
+  color: #fefbd8;
+  font-family: 'Oswald', sans-serif;
+  margin: 10px;
 }
+
 h1 {
 
 }
+
 h2 {
 
 }
@@ -17,5 +22,46 @@ img {
 }
 
 figure {
-    margin: 0;
+  
+}
+
+@media screen and (min-width: 470px) and (max-width: 600px){
+  body {
+    font-size: 1.2rem;
+    background-color:  #3e4444;
+  }
+
+  h1 {
+    color: #c94c4c;
+    font-size: 1.4rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  h2 {
+    color:#c94c4c;
+    font-size: 1.3rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  p {
+    box-sizing: border-box;
+    color:  #80ced6;
+    line-height: 1.8rem;
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .figure-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:  #80ced6;
+  }
+
+  .figure-container figcaption{
+    padding: 10px 0;
+  }
 }
