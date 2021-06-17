@@ -3,7 +3,6 @@
     "eslint": "^7.27.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "jslint": "^0.12.1"
+    "bootstrap": "^5.0.1"
   }
 }
