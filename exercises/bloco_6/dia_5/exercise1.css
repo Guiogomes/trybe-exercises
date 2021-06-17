@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+    background-color:  #3e4444;
+  }
+
+  h1 {
+    color: #c94c4c;
+    font-size: 1.4rem;
+    padding: 10px 0;
+    
+  }
+
+  h2 {
+    color:#c94c4c;
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+
+  p {
+    box-sizing: border-box;
+    color:  #80ced6;
+    font-size: 1.1;
+    line-height: 1.8rem;
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .figure-container {
+    align-items: center;
+    color:  #80ced6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure-container figcaption{
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+  body {
+    font-size: 1.2rem;
+    background-color:  #c94c4c;
+  }
+
+  h1 {
+    color:  #fefbd8;
+    font-size: 1.12rem;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  h2 {
+    color: #fefbd8;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  p {
+    box-sizing: border-box;
+    color:  #80ced6;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .figure-container img {
+    align-items: center;
+    color:  #80ced6;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .figure-container figcaption{
+    padding: 5px 0;
+  }
+
+  .figure-container img{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container-main {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+  
+  .container {
+    display: flex;
+  }
+
+  .main-text {
+    flex-basis: 50%;
+  }
+  
+  .aside-contains {
+    display: flex;
+    /* flex-basis: 50%; */
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+}
