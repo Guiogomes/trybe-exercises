@@ -12,20 +12,38 @@ function testingScope(escopo) {
 
 testingScope(true);
 
-function testingScope(escopo) {
+function testingScopeNewSetup(escopo) {
   if (escopo === true) {
-    const ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-    ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
+    let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+    ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
     console.log(ifScope);
   } else {
     const elseScope = 'Não devo ser utilizada fora meu escopo (else)';
     console.log(elseScope);
   }
 }
-testingScope(true);
+testingScopeNewSetup(true);
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// Seu código aqui.
+console.log(oddsAndEvens.sort((odd,evens) => odd - evens));
 
-console.log(oddsAndEvens.sort);
+console.log(oddsAndEvens.sort((odd,evens) => evens - odd));
+
+const fatorialOfANumber = (number) => (number === 1)? 1 : number*fatorialOfANumber(number - 1);
+console.log(fatorialOfANumber(4));
+
+const searchBigWord = (string) => {
+	const receveString = string;
+	const arrayString = receveString.split(' ');
+	let bigWord = '';
+	for (let index = 0; index < arrayString.length; index += 1) {
+		if (bigWord.length > arrayString[index].length) {
+			bigWord = arrayString[index];
+		} 
+	}
+}
+
+const array = ['ovo', 'maça', 'manga'];
+const item = array[0];
+console.log (item);
