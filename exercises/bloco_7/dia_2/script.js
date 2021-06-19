@@ -90,7 +90,7 @@ const student = {
 
 const listSkillsValuesWithFor = (student) => {
   const skills = [];
-  for(skill in student) {
+  for(let skill in student) {
     skills.push(student[skill]);
   }
 

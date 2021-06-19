@@ -33,17 +33,27 @@ const order = {
     total: 60,
   },
 };
+order['name'] = 'Luiz Silva';
+order.payment.total = 50;
+
+
 
 const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
+	return `Olá Ana Silveira, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}`;
 
 }
 
-customerInfo(order);
+console.log(customerInfo(order));
 
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+const orderModifier = (order) => {	
+	return `Olá ${order.name}, o total do seu pedido de muzzarella, calabresa e ${order.order.drinks.coke.type} é de ${order.payment.total} reais`;
 }
 
-orderModifier(order);
+console.log(orderModifier(order));
+
+// Agora você vai fazer alguns exercícios de fixação.
+// Complete a função customerInfo() para que seu retorno seja similar a "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
+// Note que o parâmetro da função já está sendo passado na chamada da função.
+// Complete a função orderModifier() para que seu retorno seja similar a "Olá Luiz Silva, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ 50,00."
+// Modifique o nome da pessoa compradora.
+// Modifique o valor total da compra para R$ 50,00.
