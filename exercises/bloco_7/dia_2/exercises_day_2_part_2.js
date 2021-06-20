@@ -59,23 +59,21 @@ const allStudents = () => {
 
 console.log(allStudents());
 
-const getValueByKey = (object) => {
-	const getKeys = Object.keys(object);
-	
-	for (let key = 0; key < getKeys.length; key += 1) {
-		let hasKey = getKeys[key]
-		console.log(object[hasKey]);
-	}
+const getValueByKey = (object,index) => {
+	const getIndexKey = Object.keys(object);
+	return (object[getIndexKey[index]])
 }
-console.log(getValueByKey(lesson1));
+console.log(getValueByKey(lesson1,3));
 
 const  verifyPairOfKeyAndValue = (object, key, value) => {
 	const entrysOfObject = Object.entries(object);
+	console.log (entrysOfObject);
 	for (let index = 0; index < entrysOfObject.length; index += 1) {
-		let entry = entrysOfObject[index];		
+		let entry = entrysOfObject[index];
 		if (entry[0] === key && entry[1] === value) {
-			return ('possui o conjunto chave e valor');
-		} 	
+			return `O objeto possui o conjunto ${key} e ${value}`;
+		} 
 	}
+	return `O objeto não possui o conjunto ${key} e ${value}`;
 }
 console.log(verifyPairOfKeyAndValue(lesson3, 'turno', 'noite'));
