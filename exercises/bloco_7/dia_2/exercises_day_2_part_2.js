@@ -77,3 +77,18 @@ const  verifyPairOfKeyAndValue = (object, key, value) => {
 	return `O objeto não possui o conjunto ${key} e ${value}`;
 }
 console.log(verifyPairOfKeyAndValue(lesson3, 'turno', 'noite'));
+
+// const getAllLessons = (object1, object2,object3) => {
+// 	const allLessons = {object1, object2, object3};	
+// 	return allLessons;
+// }
+
+const countMathStudents = (object) => {
+	// pegar as chaves do objeto
+	const getObjectEntries = Object.entries(object);
+	console.log(getObjectEntries);
+	// conferir se entre as chaves tem alguma com a materia com 
+	// o valor matemática
+	// se tiver pegar a quantidade de estudantes e somar
+}
+countMathStudents(getAllLessons(lesson1, lesson2, lesson3));
