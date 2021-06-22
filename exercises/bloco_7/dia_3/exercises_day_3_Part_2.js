@@ -61,7 +61,7 @@ const findTheNeedle = (array, word) => {
 	for (let index = 0; index < array.length; index += 1) {
 		if (array[index] === word) {
 			position = index;
-			return
+			break;
 		}		
 	}
 	return position;
