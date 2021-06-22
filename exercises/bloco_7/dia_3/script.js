@@ -41,26 +41,26 @@ const person3 = { name: 'john', age: 19 };
 
 assert.notDeepStrictEqual(person1, person3, 'Erro: os valores dos objetos são estritamente iguais');
 
-function division(x, y) {
+function division1(x, y) {
   return x / y;
 }
 
 // declaração da função division, definida anteriormente...
 
-assert.strictEqual(division(10, 2), 5); // OK
-assert.strictEqual(division(10, 0), 0); // 💣
+assert.strictEqual(division1(10, 2), 5); // OK
+assert.strictEqual(division1(10, 0), 0); // 💣
 
 // declaração da função division, definida anteriormente...
 
-assert.strictEqual(division(10, 2), 5); // OK
-assert.strictEqual(division(10, 0), 0); // 💣
+assert.strictEqual(division1(10, 2), 5); // OK
+assert.strictEqual(division1(10, 0), 0); // 💣
 
-function division(x, y) {
+function division2(x, y) {
   if (y === 0) throw new Error('parameter y must not be 0');
   return x / y;
 }
 
-assert.strictEqual(division(10, 2), 5); // OK
-assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/); // OK
+assert.strictEqual(division2(10, 2), 5); // OK
+assert.throws(() => { division2(10, 0); }, /^Error: parameter y must not be 0$/); // OK
 
 assert.strictEqual(typeof myFunction, 'function');
