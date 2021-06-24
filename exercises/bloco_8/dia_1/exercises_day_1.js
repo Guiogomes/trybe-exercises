@@ -87,3 +87,32 @@ const notes = (aswers, template, callback) => {
 }
 
 console.log(notes(studentAnswers, rightAnswers, gabarite));
+
+const mage = {
+  healthPoints: 130,
+  intelligence: 45,
+  mana: 125,
+  damage: undefined,
+};
+
+const warrior = {
+  healthPoints: 200,
+  strength: 30,
+  weaponDmg: 2,
+  damage: undefined,
+};
+
+const dragon = {
+  healthPoints: 350,
+  strength: 50,
+  damage: undefined,
+};
+
+const battleMembers = { mage, warrior, dragon };
+
+const generateRandomNumberInInterval = (min, max) => Math.floor(Math.random()*(max-min + 1) + min);
+
+mage.damage = generateRandomNumberInInterval(15,130);
+warrior.damage = generateRandomNumberInInterval(15,30);
+dragon.damage = generateRandomNumberInInterval(15,50);
+console.table(Object.values(battleMembers));
