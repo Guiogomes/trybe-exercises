@@ -30,23 +30,23 @@ console.log(newEmployees(generateDate));
 // parâmetros o número apostado e uma função que checa se o número 
 // apostado é igual ao número sorteado. O retorno da sua HOF deve ser 
 // uma string (Ex: "Tente novamente" ou "Parabéns você ganhou").
-
-const resultBet = (number) => {
-	if (typeof(number)!== 'number') {
-		console.log('Não é possível analisar o resultado sem um número.');
-		return;
-	}
-	const compare = (number) => {
+const compare = (number) => {
 		if (number === Math.floor(Math.random()*6)) {
 			console.log('Parabéns você ganhou');
 		} else {
 			console.log('Tente novamente');
 		}
-	}
-	compare(number);
 }
 
-resultBet(5);
+const resultBet = (number, callback) => {
+	if (typeof(number)!== 'number') {
+		console.log('Não é possível analisar o resultado sem um número.');
+		return;
+	}	
+	return callback(number);
+}
+
+resultBet(5, compare);
 
 // 3 - Crie uma HOF que receberá três parâmetros. 
 // O primeiro será um array de respostas corretas (Gabarito), 
@@ -60,3 +60,30 @@ resultBet(5);
 
 const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const	gabarite = (aswers, template) => {		
+	let sucessNotes = 0;
+	for (let index = 0; index < aswers.length; index += 1) {
+		let aswer = aswers[index];
+		if (aswer === 'N.A') {
+			sucessNotes += -0.5;
+		}	
+		for (let index2 = 0; index2 < template.length; index += 1) {
+			let rightAswer = template[index];
+			if (aswer === rightAswer) {
+				sucessNotes += 1;
+				break;
+			} else {
+				sucessNotes += 0;
+				break;
+			}	
+		}
+	}
+	return sucessNotes;
+}
+// console.log(gabarite(studentAnswers, rightAnswers));
+
+const notes = (aswers, template, callback) => {
+	return callback(aswers,template);
+}
+
+console.log(notes(studentAnswers, rightAnswers, gabarite));
