@@ -73,9 +73,14 @@ const expectedResult = [
   'A Coisa - Terror - Stephen King',
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
+// Crie um array com strings no formato NOME_DO_LIVRO -
+// GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
 
 function formatedBookNames() {
-  // escreva seu código aqui
+  const formatedBook = books.map((book) => 
+    `${book.name} - ${book.genre} - ${book.author.name}`
+  );
+  return formatedBook;
 }
 
 assert.deepStrictEqual(formatedBookNames(), expectedResult);
