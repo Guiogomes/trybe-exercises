@@ -95,8 +95,12 @@ const expectedResult = [
   }
 ];
 
+// Crie um array com todos os objetos
+// que possuem gênero ficção científica ou fantasia.
+
 function fantasyOrScienceFiction() {
-  // escreva seu código aqui
+  const genre = books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+  return genre;
 }
 
 assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);
