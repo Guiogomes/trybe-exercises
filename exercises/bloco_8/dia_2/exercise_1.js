@@ -52,7 +52,7 @@ const books = [
     releaseYear: 1986,
   },
   {
-    id: 6,
+    id: 6,																																																																																																																						
     name: 'O Chamado de Cthulhu',
     genre: 'Terror',
     author: {
@@ -62,10 +62,16 @@ const books = [
     releaseYear: 1928,
   },
 ];
-console.log(books[0].author.birthYear);
-// // Adicione o código do exercício aqui:
-// function authorBornIn1947() {
-  
-// }
 
-// assert.strictEqual(authorBornIn1947(), 'Stephen King');
+// // Adicione o código do exercício aqui:
+function authorBornIn1947() {
+	let author = '';
+	for (let index in books) {
+		if (books[index].author.birthYear === 1947) {
+			author = books[index].author.name;
+      return author;
+		}
+	}
+}
+
+assert.strictEqual(authorBornIn1947(), 'Stephen King');
