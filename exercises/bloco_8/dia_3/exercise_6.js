@@ -71,8 +71,13 @@ const expectedResult = [
   'O Chamado de Cthulhu',
 ];
 
+// Crie um array com o nome de todos os 
+// livros com mais de 60 anos de publicação.
+
 function oldBooks() {
-  // escreva seu código aqui
+ const releaseYear = books.filter((book) => 2021 - book.releaseYear > 60);
+ const nameBook = releaseYear.map ((release) => release.name);
+ return nameBook;
 }
 
 assert.deepStrictEqual(oldBooks(), expectedResult);
