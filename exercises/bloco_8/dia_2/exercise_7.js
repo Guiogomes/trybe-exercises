@@ -64,3 +64,16 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+const expectedResult = false;
+
+function authorUnique() {
+  const ageUnique = books.every((book) => !book.author.birthYear);
+  return ageUnique;
+}
+
+
+
+
+
+assert.strictEqual(authorUnique(), expectedResult);
