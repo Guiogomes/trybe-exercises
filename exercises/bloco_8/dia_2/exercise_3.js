@@ -80,7 +80,8 @@ const expectedResult = {
 };
 
 function getNamedBook() {
-  // escreva seu código aqui
+  const biggestNameBook = books.find((book) => book.name.length === 26);
+  return biggestNameBook;
 }
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);
