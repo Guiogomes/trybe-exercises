@@ -81,4 +81,4 @@ function authorWith3DotsOnName() {
   console.log(dotName);
 }
 authorWith3DotsOnName();
-// assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
