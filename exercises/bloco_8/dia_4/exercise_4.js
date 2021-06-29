@@ -76,14 +76,10 @@ const expectedResult = {
   releaseYear: 1991,
 };
 
-function longestNamedBook() {
-	const longestNameBook = books
-		.reduce((accumulator, currentValor) => 
-			(accumulator.name.length > currentValor.name.length) 
-			? accumulator : currentValor);
-			return longestNameBook;
+const longestNamedBook = (books) =>
+  books.reduce((accumulator, currentValor) => 
+		(accumulator.name.length > currentValor.name.length)
+    ? accumulator : currentValor);
 
-}
-
-assert.deepStrictEqual(longestNamedBook(), expectedResult);
+assert.deepStrictEqual(longestNamedBook(books), expectedResult);
 
