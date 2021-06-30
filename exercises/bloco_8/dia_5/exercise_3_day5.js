@@ -15,9 +15,8 @@ const gunnar = {
 };
 
 // complete a assinatura da função abaixo
-const {name: personName, age: personAge, likes: personLike} = alex;
-const {name, age, likes} = gunnar;
-const personLikes = (args1, args2, args3) => `${args1} is ${args2} years old and likes ${args3.join(', ')}.`;
 
-assert.strictEqual(personLikes(personName, personAge, personLike), 'Alex is 26 years old and likes fly fishing.');
-assert.strictEqual(personLikes(name, age, likes), 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.');
+const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+
+assert.strictEqual(personLikes(alex), 'Alex is 26 years old and likes fly fishing.');
+assert.strictEqual(personLikes(gunnar), 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.');
