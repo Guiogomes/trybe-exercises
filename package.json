@@ -3,6 +3,25 @@
     "eslint": "^7.27.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1"
-  }
+    "bootstrap": "^5.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "name": "trybe-exercises",
+  "description": "Aqui você encontrará todos os trabalhos que eu desenvolvi ao longo do curso.\r Os módulos são dividos em 4 grandes áreas:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guiogomes/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guiogomes/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/Guiogomes/trybe-exercises#readme"
 }
