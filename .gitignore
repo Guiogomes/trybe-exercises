@@ -16,14 +16,4 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 node_modules/bulma/sass/utilities/.DS_Store
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
+
