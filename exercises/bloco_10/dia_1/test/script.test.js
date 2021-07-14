@@ -43,4 +43,34 @@ describe('Teste os casos de funcionamento da função myRemoveWithoutCopy', () =
 	it('Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado', () => {
 		expect(script.myRemoveWithoutCopy([1,2,3,4], 5)).toEqual([1,2,3,4]);
 	});
-})
+});
+
+describe('Teste os casos de funcionamento da função fizzbuzz', () => {
+	test('Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado', () => {
+		expect(script.myFizzBuzz(15)).toBe('fizzbuzz');
+	});
+	test('Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado', () => {
+		expect(script.myFizzBuzz(9)).toBe('fizz');
+	});
+	test('Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado', () => {
+		expect(script.myFizzBuzz(10)).toBe('buzz');
+	});
+	test('Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado', () => {
+		expect(script.myFizzBuzz(13)).toBe(13);
+	});
+	test('Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
+		expect(script.myFizzBuzz('3')).toEqual(false);
+	});
+});
+
+describe('Implemente os casos de comparação entre os obj1, ob2 e obj3', () => {
+	test('Teste se o obj1 é idêntico ao obj2', () => {
+		expect(script.obj1).toEqual(script.obj2);
+	});
+	test('Teste se o obj1 não é idêntico ao obj3', () => {
+		expect(script.obj1).not.toEqual(script.obj3);
+	});
+	test('Teste se o obj2 não é idêntico ao obj3', () => {
+		expect(script.obj2).not.toEqual(script.obj3);
+	});
+});
