@@ -16,10 +16,12 @@ describe('Successful cases of the function getUserName', () => {
 	});
 });
 
-// describe('Failure cases of the function getUserName', () => {
-// 	it('Throw error with a invalid parameter', async () => {
-// 		await getUserNameAsyncAwait('4').catch(error => {
-// 			expect(error).toEqual({ error: 'User with xablau not found.' })
-// 		});
-// 	});
-// });
+describe('Failure cases of the function getUserName', () => {
+	it('Throw error with a invalid parameter', async () => {
+		try {
+			getUserNameAsyncAwait('xablau')
+		} catch (error) {
+			expect(error).toEqual({ error: 'User with xablau not found.' })
+		}
+	});
+});

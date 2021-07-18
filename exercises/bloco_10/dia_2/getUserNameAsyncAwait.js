@@ -13,10 +13,9 @@ const findUserById = (id) => {
 };
 
 const getUserNameAsyncAwait = (userID) => {
-	return findUserById(userID).then(user => user.name)
-	.catch(msg => msg);
+	return findUserById(userID).then(user => user.name).catch(error => console.log(error))	
 };
-
+getUserNameAsyncAwait(4).then(e => console.log(e))
 module.exports = {
 	users,
 	findUserById,
