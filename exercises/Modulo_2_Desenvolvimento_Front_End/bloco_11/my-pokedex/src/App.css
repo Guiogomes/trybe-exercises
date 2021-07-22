@@ -44,7 +44,7 @@ body {
   padding: 1rem;
 }
 
-.pokedex {
+/* .pokedex {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -62,4 +62,4 @@ body {
 .pokemon {
   color:rgba(223, 57, 21, 0.91);
   text-align: center;
-}
+} */
