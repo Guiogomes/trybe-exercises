@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Forms from "./Forms";
 
 function App() {
   return (
-    <div>Hello World!</div>
+    <div>
+      <Forms />
+    </div>
   );
 }
 
