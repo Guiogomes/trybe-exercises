@@ -5,5 +5,5 @@
 import '@testing-library/jest-dom';
 // setupTests.js
 // setupTests.js
-// import MutationObserver from '@sheerun/mutationobserver-shim';
-// window.MutationObserver = MutationObserver;
+import MutationObserver from 'mutationobserver-shim';
+window.MutationObserver = MutationObserver;
