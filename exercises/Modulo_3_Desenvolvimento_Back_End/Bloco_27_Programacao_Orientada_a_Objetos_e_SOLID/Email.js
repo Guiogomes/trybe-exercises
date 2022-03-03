@@ -80,4 +80,4 @@ personalMailList.removeEmail(email5);
 console.log('------ professionalMailList.all:');
 professionalMailList.all.forEach(function (mail) { return console.log(mail.content); });
 console.log('------ personalMailList.all:');
-personalMailList.all.forEach(function (mail) { return console.log(mail.content); });
+personalMailList.all.forEach(function (mail) { return console.log(mail.content()); });
