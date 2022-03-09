@@ -1,12 +1,14 @@
 import fs from 'fs/promises';
 
 export const read = async (path: string) => {
-  const file = await fs.readFile(path, 'utf8');
+  const data = await fs.readFile(path, 'utf8');
+  const file = JSON.parse(data);
   return file;
 };
 
 export const write = async (path: string, message: string) => {
-  const file = await read(path);
-  const newFile = await fs.writeFile(file, message);
+  const data = await read(path);
+  const file = JSON.parse(data);
+  const newFile = await fs.writeFile(file, JSON.stringify(message));
   return newFile;
 };

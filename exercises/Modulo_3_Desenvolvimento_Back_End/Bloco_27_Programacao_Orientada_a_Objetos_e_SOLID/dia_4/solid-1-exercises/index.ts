@@ -1,4 +1,6 @@
-import fs from 'fs/promises';
+import { read, write } from './helpers/functions.ts';
+
+const PLANTS = 'plants.json';
 
 interface IPlant {
   id: string,
@@ -34,13 +36,13 @@ class Plants {
   }
 
   async getPlants() {
-    const plantsRaw = await fs.readFile('plants.json', { encoding: 'utf8' });
+    const plantsRaw = read(PLANTS);
     const plants: IPlant[] = JSON.parse(plantsRaw);
     return plants;
   }
 
   async getPlantById(id: string) {
-    const plantsRaw = await fs.readFile('plants.json', { encoding: 'utf8' });
+    const plantsRaw = read(PLANTS);
     const plants: IPlant[] = JSON.parse(plantsRaw);
 
     const plantById = plants.find((plant) => plant.id === id);
@@ -56,7 +58,7 @@ class Plants {
     if (!removedPlant) return null;
 
     const newPlants = plants.filter((plant) => plant.id !== id);
-    await fs.writeFile('plants.json', JSON.stringify(newPlants));
+    await write(PLANTS, JSON.stringify(newPlants));
 
     return removedPlant;
   }
