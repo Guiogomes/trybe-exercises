@@ -12,7 +12,7 @@ export interface IWorldCup {
   bestYoungPlayer: string,
 }
 
-export const worldCupSchema = new Schema<IWorldCup>({
+export const WorldCupSchema = new Schema<IWorldCup>({
   year: { type: Number, required: true },
   hostCountry: { type: String, required: true },
   champions: { type: String, required: true },
