@@ -1,6 +1,7 @@
 import { z } from "zod";
+import { Document } from "mongoose";
 
-export const RecordStoreSchema = z.object({
+const RecordStoreSchema = z.object({
   artist: z.string({
     required_error: "Artist is required",
     invalid_type_error: "Artist must be a string",
@@ -22,4 +23,10 @@ export const RecordStoreSchema = z.object({
 
 type RecordStore = z.infer<typeof RecordStoreSchema>;
 
+interface RecordStoreDocument extends RecordStore, Document {}
+
 export default RecordStore;
+export {
+  RecordStoreSchema,
+  RecordStoreDocument,
+}
