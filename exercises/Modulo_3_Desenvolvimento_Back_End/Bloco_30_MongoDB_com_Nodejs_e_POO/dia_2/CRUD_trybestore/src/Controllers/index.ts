@@ -19,7 +19,7 @@ abstract class Controller<GenericController> {
   abstract create(
       req: RequestIncrement<GenericController>,
       res: Response<GenericController | ResponseError>,
-      ): Promise<typeof res>;
+      ): Promise<typeof res | undefined>;
 
   getAll = async(
     _req: Request,
@@ -36,6 +36,33 @@ abstract class Controller<GenericController> {
       return res.status(this.status.NOT_FOUND).json({ error: this.errors.notFound });
     }
     return res.status(this.status.OK).json(record);
+  }
+
+  update = async(req: RequestIncrement<GenericController>, res: Response<GenericController | ResponseError>): Promise<typeof res | undefined> => {
+    const { id } = req.params;
+    const { body } = req;
+    try {
+      const updated = await this.service.update(id, body);
+      if(!updated) {
+        return res.status(this.status.INTERNAL_SERVER_ERROR).json({ error: this.errors.internal });
+      }
+      return res.status(this.status.OK).json(updated);
+    } catch (error) {
+      return res.status(this.status.INTERNAL_SERVER_ERROR).json({ error: this.errors.internal });
+    }
+  }
+
+  delete = async(req: Request, res: Response<GenericController | ResponseError>): Promise<typeof res | undefined> => {
+    const { id } = req.params;
+    try {
+      const deleted = await this.service.delete(id);
+      if(!deleted) {
+        return res.status(this.status.INTERNAL_SERVER_ERROR).json({ error: this.errors.internal });
+      }
+      return res.status(this.status.OK).json(deleted);
+    } catch (error) {
+      return res.status(this.status.INTERNAL_SERVER_ERROR).json({ error: this.errors.internal });
+    }
   }
 
 };

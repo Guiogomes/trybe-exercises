@@ -26,3 +26,5 @@ class RecordStoreService extends Service<RecordStore> {
     return updated;
   }
 }
+
+export default RecordStoreService;

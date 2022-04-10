@@ -13,6 +13,7 @@ abstract class Service<GenericType> {
 
   getAll = async (): Promise<GenericType[]> => {
     const allRecords = await this.model.getAll();
+    console.log(allRecords);
     return allRecords;
   }
 

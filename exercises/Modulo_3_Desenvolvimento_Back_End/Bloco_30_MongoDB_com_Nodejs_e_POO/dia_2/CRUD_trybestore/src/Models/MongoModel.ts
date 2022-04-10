@@ -1,4 +1,5 @@
-import { Model as MoongoseModel, Document } from 'mongoose';
+import { Model as MoongoseModel, Document, Types } from 'mongoose';
+import { ObjectId } from 'mongodb';
 import Model from '../Interfaces/Model';
 
 abstract class MongoModel<GenericModel> implements Model<GenericModel>{
