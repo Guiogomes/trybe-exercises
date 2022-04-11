@@ -25,6 +25,7 @@ class RecordStoreService extends Service<RecordStore> {
     const updated = this.model.update(id, data);
     return updated;
   }
+
 }
 
 export default RecordStoreService;

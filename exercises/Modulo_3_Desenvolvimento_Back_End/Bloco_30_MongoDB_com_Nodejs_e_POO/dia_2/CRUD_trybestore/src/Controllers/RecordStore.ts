@@ -65,6 +65,7 @@ class RecordStoreController extends Controller<RecordStore> {
     const { id } = req.params;
     const deleted = await this.service.delete(id);
     if(!deleted) {
+      console.error(deleted);
       return res.status(this.status.INTERNAL_SERVER_ERROR).json({ error: this.errors.internal });
     }
     return res.status(this.status.OK).json(deleted);

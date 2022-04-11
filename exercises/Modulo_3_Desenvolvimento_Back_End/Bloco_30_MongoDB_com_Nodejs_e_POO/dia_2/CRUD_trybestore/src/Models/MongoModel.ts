@@ -1,5 +1,4 @@
-import { Model as MoongoseModel, Document, Types } from 'mongoose';
-import { ObjectId } from 'mongodb';
+import { Model as MoongoseModel, Document } from 'mongoose';
 import Model from '../Interfaces/Model';
 
 abstract class MongoModel<GenericModel> implements Model<GenericModel>{
@@ -13,7 +12,8 @@ abstract class MongoModel<GenericModel> implements Model<GenericModel>{
   }
 
   getAll = async (): Promise<GenericModel[]> => {
-    const allRecords = await this.model.find();
+    // console.log(Model)
+    const allRecords = await this.model.find({});
     return allRecords;
   }
   
@@ -23,12 +23,12 @@ abstract class MongoModel<GenericModel> implements Model<GenericModel>{
   }
 
   async update(id: string, data: GenericModel): Promise<GenericModel | null> {
-    const updated = await this.model.findByIdAndUpdate({ _id: id }, { ...data }, { new: true });
+    const updated = await this.model.findOneAndUpdate({ _id: id }, { ...data }, { new: true });
     return updated;
   }
 
   async delete(id: string): Promise<GenericModel | null> {
-    const deleted = await this.model.findByIdAndDelete({ _id: id });
+    const deleted = await this.model.findOneAndDelete({ _id: id });
     return deleted;
   };
   

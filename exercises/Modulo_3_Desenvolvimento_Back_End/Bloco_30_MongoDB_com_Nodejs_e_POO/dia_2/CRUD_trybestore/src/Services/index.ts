@@ -12,9 +12,8 @@ abstract class Service<GenericType> {
   }
 
   getAll = async (): Promise<GenericType[]> => {
-    const allRecords = await this.model.getAll();
-    console.log(allRecords);
-    return allRecords;
+    const all = await this.model.getAll();
+    return all;
   }
 
   getOne = async (id: string): Promise<GenericType | null | ServiceError> => {
